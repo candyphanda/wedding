@@ -1,0 +1,9 @@
+# Original large photos and style screenshots stay on this computer only
+Photo/
+Template/
+Music/
+Bank_QRcode/
+.DS_Store
+Thumbs.db
+
+Claude outputs/

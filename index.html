@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Ngọc &amp; Kiểu — Thiệp mời cưới 19.12.2026</title>
+  <meta name="description" content="Trân trọng kính mời bạn đến dự lễ cưới của Ngọc Phan &amp; Kiểu Ngô — 19.12.2026">
+  <meta property="og:title" content="Ngọc & Kiểu — Thiệp mời cưới">
+  <meta property="og:description" content="Trân trọng kính mời bạn đến chung vui cùng chúng mình · 19.12.2026">
+  <meta property="og:image" content="assets/photos/cover.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+
+<!-- 0. ENVELOPE (welcome screen) -->
+<div id="envelope-screen" class="envelope-screen">
+  <p class="env-invite">Trân trọng kính mời<br><em class="script guest-name" id="guest-name">bạn</em></p>
+  <p class="en env-en">You are warmly invited</p>
+  <button id="open-btn" class="envelope" aria-label="Mở thiệp / Open the invitation">
+    <span class="env-back"></span>
+    <span class="env-flap"></span>
+    <span class="env-front"></span>
+    <span class="env-names script">Ngọc &amp; Kiểu</span>
+    <span class="env-date">19.12.2026</span>
+    <span class="seal"><span>Mở</span></span>
+  </button>
+  <p class="env-hint">Nhấn để mở thiệp…<br><span class="en">Tap to open</span></p>
+</div>
+
+<!-- Music button -->
+<button id="music-btn" class="music-btn" aria-label="Bật/tắt nhạc" hidden>
+  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 18V6l10-2v12" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="6.5" cy="18" r="2.5" fill="currentColor"/><circle cx="16.5" cy="16" r="2.5" fill="currentColor"/></svg>
+</button>
+<div id="yt-holder" aria-hidden="true"></div>
+
+<main class="page">
+
+  <!-- 1. COVER -->
+  <section class="cover">
+    <img src="assets/photos/cover.webp" alt="Ảnh cưới Ngọc và Kiểu" fetchpriority="high">
+    <div class="cover-shade"></div>
+    <div class="cover-text reveal">
+      <span class="script big-script">The Wedding of</span>
+      <h1>NGỌC PHAN &amp; KIỂU NGÔ</h1>
+      <p class="cover-date">19 . 12 . 2026</p>
+    </div>
+  </section>
+
+  <!-- 2. INVITATION CARD -->
+  <section class="invite">
+    <div class="card reveal">
+      <div class="monogram script">N<span>&amp;</span>K</div>
+      <p class="small-caps">Trân trọng kính mời tham dự<br>bữa tiệc thân mật cùng gia đình chúng tôi</p>
+      <p class="en">Together with our families, we warmly invite you to celebrate with us</p>
+
+      <h2 class="names">
+        <span>Ngọc Phan</span>
+        <span class="script and">and</span>
+        <span>Kiểu Ngô</span>
+      </h2>
+
+      <div class="datebar">
+        <span>THỨ BẢY</span><span class="d">19 . 12 . 2026</span><span>16:30</span>
+      </div>
+      <p class="lunar">(Tức ngày 11 tháng 11 năm Bính Ngọ)</p>
+      <p class="en">Saturday, 19 December 2026 · 4:30 pm</p>
+
+      <h3 class="venue">TẠI TƯ GIA NHÀ TRAI &amp; NHÀ GÁI</h3>
+      <p class="en">At the family homes of the groom and the bride</p>
+      <p class="addr">Thụy Ninh, Thái Thụy, Thái Bình<br><em>(xã Tây Thụy Anh, tỉnh Hưng Yên)</em></p>
+
+      <div class="families">
+        <div>
+          <h4>NHÀ GÁI</h4>
+          <p>Bố: Phan Văn Đoàn<br>Mẹ: Trần Thị Nguyệt</p>
+        </div>
+        <div>
+          <h4>NHÀ TRAI</h4>
+          <p>Bố: Ngô Hữu Cương<br>Mẹ: Lê Thị Lụa</p>
+        </div>
+      </div>
+
+      <a class="btn-ghost" id="map-btn" target="_blank" rel="noopener" href="#">📍 Chỉ đường <span class="en">· Directions</span></a>
+    </div>
+  </section>
+
+  <!-- 3. SAVE THE DATE -->
+  <section class="savedate" style="background-image:url('assets/photos/savedate.webp')">
+    <div class="sd-column reveal">
+      <p class="small-caps light">SAVE THE DATE</p>
+      <p class="script light" style="font-size:2.4rem">Ngọc &amp; Kiểu</p>
+      <span class="line"></span>
+      <div class="sd-date"><span>19</span><span>12</span><span>26</span></div>
+      <span class="line"></span>
+      <p class="sd-quote">Một đời bên nhau,<br>bắt đầu từ hôm nay.</p>
+      <p class="sd-quote en">A lifetime together begins today.</p>
+    </div>
+  </section>
+
+  <!-- 4. LOVE STORY -->
+  <section class="story">
+    <div class="orn"></div>
+    <h2 class="story-title">THE STORY <span class="script">of us</span></h2>
+    <p class="en center">Our love story</p>
+
+    <article class="chapter reveal left">
+      <div class="polaroid chibi-wrap" aria-label="Minh hoạ chibi hai bạn học cấp 2">
+        <!-- Original chibi drawing (SVG): two secondary-school kids -->
+        <svg viewBox="0 0 300 330" role="img" aria-label="Chibi: bạn nam đeo kính và bạn nữ tóc ngắn mặc đồng phục">
+          <rect width="300" height="330" fill="#f6efe0"/>
+          <circle cx="60" cy="50" r="22" fill="#fff" opacity=".7"/><circle cx="85" cy="42" r="16" fill="#fff" opacity=".7"/>
+          <circle cx="240" cy="70" r="18" fill="#fff" opacity=".7"/>
+          <rect y="270" width="300" height="60" fill="#d9e6c8"/>
+          <!-- girl (left) -->
+          <g transform="translate(18,0)">
+            <rect x="35" y="195" width="50" height="62" rx="12" fill="#fff" stroke="#c8b99a"/>
+            <path d="M35 247 h50 v28 h-50z" fill="#2c3e6b"/>
+            <rect x="48" y="262" width="10" height="26" rx="4" fill="#f5d2b3"/><rect x="62" y="262" width="10" height="26" rx="4" fill="#f5d2b3"/>
+            <path d="M52 192 l8 14 l8 -14z" fill="#c0392b"/>
+            <circle cx="60" cy="130" r="55" fill="#f9dcc0"/>
+            <path d="M5 135 C0 60 40 62 60 64 C85 62 122 62 115 135 C112 150 106 160 100 168 C100 130 90 100 60 98 C30 100 20 130 20 168 C14 160 8 150 5 135z" fill="#2b1d17"/>
+            <circle cx="43" cy="135" r="6" fill="#2b1d17"/><circle cx="77" cy="135" r="6" fill="#2b1d17"/>
+            <circle cx="45" cy="133" r="2" fill="#fff"/><circle cx="79" cy="133" r="2" fill="#fff"/>
+            <ellipse cx="32" cy="150" rx="8" ry="5" fill="#f4a6a0" opacity=".7"/><ellipse cx="88" cy="150" rx="8" ry="5" fill="#f4a6a0" opacity=".7"/>
+            <path d="M52 152 q8 8 16 0" fill="none" stroke="#a5553f" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+          <!-- boy (right) -->
+          <g transform="translate(168,0)">
+            <rect x="35" y="195" width="50" height="62" rx="12" fill="#fff" stroke="#c8b99a"/>
+            <path d="M35 247 h50 v28 h-50z" fill="#2c3e6b"/>
+            <rect x="48" y="262" width="10" height="26" rx="4" fill="#f5d2b3"/><rect x="62" y="262" width="10" height="26" rx="4" fill="#f5d2b3"/>
+            <path d="M52 192 l8 14 l8 -14z" fill="#c0392b"/>
+            <circle cx="60" cy="130" r="55" fill="#f9dcc0"/>
+            <path d="M7 120 C8 70 38 62 62 64 C90 62 114 74 113 120 C100 100 80 92 60 92 C40 92 20 100 7 120z" fill="#2b1d17"/>
+            <circle cx="43" cy="135" r="6" fill="#2b1d17"/><circle cx="77" cy="135" r="6" fill="#2b1d17"/>
+            <circle cx="45" cy="133" r="2" fill="#fff"/><circle cx="79" cy="133" r="2" fill="#fff"/>
+            <circle cx="43" cy="135" r="15" fill="none" stroke="#3b3b3b" stroke-width="3"/><circle cx="77" cy="135" r="15" fill="none" stroke="#3b3b3b" stroke-width="3"/><path d="M58 135 h4" stroke="#3b3b3b" stroke-width="3"/>
+            <ellipse cx="30" cy="154" rx="7" ry="4" fill="#f4a6a0" opacity=".7"/><ellipse cx="90" cy="154" rx="7" ry="4" fill="#f4a6a0" opacity=".7"/>
+            <path d="M52 154 q8 8 16 0" fill="none" stroke="#a5553f" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+          <path d="M150 100 c-8 -14 -26 -2 -14 12 l14 14 l14 -14 c12 -14 -6 -26 -14 -12z" fill="#e57373"/>
+        </svg>
+      </div>
+      <div class="caption"><b class="year">2006</b><p>Ánh nhìn đầu tiên ngày chung trường Cấp 2</p><p class="en">The first glance, back in secondary school</p></div>
+    </article>
+
+    <article class="chapter reveal right">
+      <div class="polaroid"><img src="assets/photos/story-2021.webp" alt="Gặp lại ở Tây Ban Nha" loading="lazy"></div>
+      <div class="caption"><b class="year">2021</b><p>Phút gặp lại nơi xứ sở Bò Tót &amp; Nhịp đập yêu thương</p><p class="en">Meeting again in the land of the bulls, and hearts beating faster</p></div>
+    </article>
+
+    <article class="chapter reveal left wide">
+      <div class="carousel" id="carousel">
+        <img src="assets/photos/story-italy1.webp" alt="Italy" loading="lazy">
+        <img src="assets/photos/story-rome.webp" alt="Rome" loading="lazy">
+        <img src="assets/photos/story-nice.webp" alt="Nice" loading="lazy">
+        <img src="assets/photos/story-swiss.webp" alt="Thụy Sĩ" loading="lazy">
+      </div>
+      <p class="swipe en center">← vuốt để xem thêm · swipe →</p>
+      <div class="caption"><b class="year">2022 – 2024</b><p>Cùng nắm tay đi qua những phương trời Âu</p><p class="en">Hand in hand across the skies of Europe</p></div>
+    </article>
+
+    <article class="chapter reveal right">
+      <div class="duo">
+        <div class="polaroid"><img src="assets/photos/story-proposal.webp" alt="Lời cầu hôn" loading="lazy"></div>
+        <div class="polaroid"><img src="assets/photos/story-france.webp" alt="Đăng ký kết hôn tại Pháp" loading="lazy"></div>
+      </div>
+      <div class="caption"><b class="year">2025</b><p>Lời hứa trăm năm &amp; Đặt bút thành đôi tại Pháp</p><p class="en">A promise for a hundred years, and signing our names together in France</p></div>
+    </article>
+
+    <article class="chapter reveal left">
+      <div class="polaroid"><img src="assets/photos/album3.webp" alt="Ảnh cưới" loading="lazy"></div>
+      <div class="caption"><b class="year">2026</b><p>Ngày chung đôi – Trọn vẹn yêu thương tại Việt Nam</p><p class="en">Our wedding day: a love made complete in Vietnam</p></div>
+    </article>
+  </section>
+
+  <!-- 5. TIMELINE -->
+  <section class="timeline">
+    <h2 class="tl-title script">Timeline</h2>
+    <p class="en center">Our wedding days</p>
+
+    <div class="tl-day">19/12/2026 · Thứ Bảy</div>
+    <ul class="tl">
+      <li class="reveal"><div class="tl-t">Sáng / Chiều<small>Morning / Afternoon</small></div><div class="tl-i">💍</div><div class="tl-e">Lễ Hỏi &amp; Đính Hôn<small>Engagement ceremony (family)</small></div></li>
+      <li class="reveal hl"><div class="tl-t">Tối · 16:30<small>Evening</small></div><div class="tl-i">🥂</div><div class="tl-e">Tiệc Thân Mật Cùng Bạn Bè<small>Intimate party with friends · <b>You are invited</b></small></div></li>
+    </ul>
+
+    <div class="tl-day soft">20/12/2026 · Chủ Nhật</div>
+    <ul class="tl soft">
+      <li class="reveal"><div class="tl-t">Cả ngày<small>All day</small></div><div class="tl-i">🏡</div><div class="tl-e">Lễ Vũ Quy (Nhà Gái) &amp; Lễ Thành Hôn (Nhà Trai)<small>Wedding ceremonies</small></div></li>
+    </ul>
+    <p class="note">Ngày 20/12 là buổi lễ dành cho khách mời của hai bên gia đình. Chúng mình chia sẻ để bạn biết, không phải lời mời tham dự.<br><span class="en">The 20th is for our parents' guests. We share it for your information only, not as an invitation.</span></p>
+  </section>
+
+  <!-- 6. ALBUM + COUNTDOWN -->
+  <section class="album">
+    <h2 class="album-title"><span class="script">The</span> ALBUM</h2>
+    <div class="mosaic">
+      <img class="m1 reveal" src="assets/photos/album1.webp" alt="Album 1" loading="lazy">
+      <img class="m2 reveal" src="assets/photos/album2.webp" alt="Album 2" loading="lazy">
+      <img class="m3 reveal" src="assets/photos/savedate.webp" alt="Album 3" loading="lazy">
+    </div>
+    <p class="become">WE WILL BECOME<br>HUSBAND AND WIFE IN</p>
+    <p class="en light center">Chúng mình sẽ trở thành vợ chồng sau</p>
+    <div class="countdown" id="countdown">
+      <div><b id="cd-d">00</b><span>Ngày<br><i>Days</i></span></div>
+      <div><b id="cd-h">00</b><span>Giờ<br><i>Hours</i></span></div>
+      <div><b id="cd-m">00</b><span>Phút<br><i>Minutes</i></span></div>
+      <div><b id="cd-s">00</b><span>Giây<br><i>Seconds</i></span></div>
+    </div>
+  </section>
+
+  <!-- 7. RSVP + GIFT -->
+  <section class="rsvp" id="rsvp">
+    <p class="rsvp-intro">Vui lòng xác nhận sự tham dự của bạn để chúng mình chuẩn bị đón tiếp một cách chu đáo nhất. Trân trọng cảm ơn!<br><span class="en">Please let us know if you can join us so we can prepare for you. Thank you!</span></p>
+
+    <form id="rsvp-form" novalidate>
+      <input type="text" id="f-name" name="name" placeholder="Tên của bạn · Your name" maxlength="80" required autocomplete="name">
+      <textarea id="f-wish" name="wish" placeholder="Gửi lời chúc đến cô dâu chú rể · Your wishes for the couple" maxlength="600" rows="4"></textarea>
+      <select id="f-attend" name="attending" required>
+        <option value="" disabled selected>Xác nhận tham dự · Will you come?</option>
+        <option value="Có">Có, mình sẽ đến · Yes, I'll come</option>
+        <option value="Không">Rất tiếc, không thể đến · Sorry, can't come</option>
+      </select>
+      <select id="f-guests" name="guests">
+        <option value="" disabled selected>Bạn đi cùng ai không? · Bringing anyone?</option>
+        <option value="0">Chỉ mình mình · Just me</option>
+        <option value="1">Thêm 1 người · +1</option>
+        <option value="2">Thêm 2 người · +2</option>
+        <option value="3">Thêm 3 người · +3</option>
+      </select>
+      <select id="f-gift" name="gift">
+        <option value="" disabled selected>Gửi tiền mừng? · Wedding gift?</option>
+        <option value="Gửi qua QR">Mình gửi mừng qua QR · Via QR code</option>
+        <option value="Mừng trực tiếp">Mình mừng trực tiếp · In person</option>
+        <option value="Chỉ gửi lời chúc">Chỉ gửi lời chúc · Wishes only</option>
+      </select>
+      <input type="text" name="website" id="f-hp" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
+      <button type="submit" id="f-submit">XÁC NHẬN <small>· CONFIRM</small></button>
+      <p id="f-msg" class="f-msg" role="status" aria-live="polite"></p>
+    </form>
+
+    <div class="gift">
+      <h3 class="script">Gửi quà mừng cưới</h3>
+      <p class="en center">Wedding gift (optional)</p>
+      <p class="gift-text">Sự hiện diện của bạn là món quà lớn nhất. Nếu bạn muốn gửi lời chúc phúc, bạn có thể quét mã QR dưới đây.<br><span class="en">Your presence is the greatest gift. If you wish to send a gift, you can scan the QR code below.</span></p>
+      <div class="qr-card">
+        <img src="assets/qr/qr.jpg" alt="Mã QR Vietcombank — PHAN THI TRAN NGOC" id="qr-img" loading="lazy">
+      </div>
+      <p class="qr-holder">Chủ tài khoản · <b>PHAN THI TRAN NGOC</b><br>Vietcombank</p>
+      <a class="btn-ghost" href="assets/qr/qr.jpg" download="QR-Wedding-Gift-Ngoc-Phan.jpg">⬇ Lưu mã QR <span class="en">· Save QR</span></a>
+    </div>
+  </section>
+
+  <!-- 8. THANK YOU -->
+  <section class="thanks">
+    <img src="assets/photos/closing.webp" alt="Cảm ơn" loading="lazy">
+    <h2 class="script">Thank you!</h2>
+    <p class="en center">Hẹn gặp bạn ngày 19.12.2026 · See you on 19.12.2026</p>
+    <p class="foot">Ngọc &amp; Kiểu</p>
+  </section>
+
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
