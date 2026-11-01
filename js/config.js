@@ -7,7 +7,7 @@ window.WEDDING = {
   // Google Apps Script web-app URL (receives the RSVP answers and writes them in the Google Sheet).
   rsvpUrl: "https://script.google.com/macros/s/AKfycbz5Amo2H4LINqOQNQoJE6LSr0rwB8d__hG50TcciGA0fDXZ5Wh_OhYDKiwO9REvsDss/exec",
 
-  // YouTube video ID of the music (the part after v= in the link).
+  // Default YouTube video ID (the part after v= in the link). Each side below can have its own.
   musicVideoId: "XuFDO-2UOrM",
 
   // Used when the link has no ?side=
@@ -27,6 +27,7 @@ window.WEDDING = {
       address: "Thôn Đoài, Thụy Ninh, Thái Thụy, Thái Bình",
       addressNote: "(xã Tây Thụy Anh, tỉnh Hưng Yên)",
       mapsUrl: "https://maps.app.goo.gl/KwGY2qR7UHLGVD7g7",
+      musicVideoId: "XuFDO-2UOrM",     // Marry You - Bruno Mars (Music/Music_bride.txt)
       firstFamily: "bride"            // family shown on the left
     },
     groom: {
@@ -40,6 +41,7 @@ window.WEDDING = {
       address: "Thôn Gang, Thụy Ninh, Thái Thụy, Thái Bình",
       addressNote: "(xã Tây Thụy Anh, tỉnh Hưng Yên)",
       mapsUrl: "https://maps.app.goo.gl/Fr5FGVz3VfRbvfcC6",
+      musicVideoId: "pBTp2RWxq-s",     // I Do - 911 (Music/Music_groom.txt)
       firstFamily: "groom"
     }
   }

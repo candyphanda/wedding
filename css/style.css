@@ -68,9 +68,9 @@ section{position:relative}
 .names{font-family:"Great Vibes","Allura",cursive;font-weight:400;color:var(--gold);font-size:3.2rem;letter-spacing:0;text-transform:none;margin:12px 0 12px;line-height:1.2}
 .names span{display:block}
 .names .heart{display:block;width:22px;height:20px;margin:2px auto 0;color:var(--gold)}
-.datebar{display:flex;border-top:1px solid #cdbb8a;border-bottom:1px solid #cdbb8a;margin:14px 0 8px;font-family:var(--head);color:var(--tan);font-size:.85rem;letter-spacing:.1em}
-.datebar span{flex:1;padding:10px 4px;display:flex;align-items:center;justify-content:center}
-.datebar .d{flex:1.6;color:var(--gold);font-size:1.1rem;font-weight:600;border-left:1px solid #cdbb8a;border-right:1px solid #cdbb8a}
+.datebar{display:flex;border:2px solid var(--gold);border-radius:10px;margin:18px 0 10px;font-family:var(--head);color:var(--brown);font-size:1rem;letter-spacing:.08em;background:linear-gradient(180deg,#f8efd2,#efdfae);box-shadow:0 4px 12px rgba(138,106,31,.25);overflow:hidden}
+.datebar span{flex:1;padding:16px 2px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:.88rem;white-space:nowrap;letter-spacing:.04em}
+.datebar .d{flex:2.4;color:#fff;background:var(--gold);font-size:1.4rem;font-weight:700;letter-spacing:.03em;text-shadow:0 1px 2px rgba(0,0,0,.25);border:0}
 .lunar{font-style:italic;color:var(--tan)}
 .venue{font-family:var(--head);color:var(--gold);font-size:1.05rem;letter-spacing:.08em;margin:20px 0 4px;font-weight:600}
 .addr{margin:6px 0 16px;color:var(--ink)}

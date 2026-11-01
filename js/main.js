@@ -36,8 +36,8 @@
 
   window.onYouTubeIframeAPIReady = function () {
     player = new YT.Player("yt-holder", {
-      width: "200", height: "200", videoId: cfg.musicVideoId,
-      playerVars: { loop: 1, playlist: cfg.musicVideoId, playsinline: 1, controls: 0 },
+      width: "200", height: "200", videoId: (content.musicVideoId || cfg.musicVideoId),
+      playerVars: { loop: 1, playlist: (content.musicVideoId || cfg.musicVideoId), playsinline: 1, controls: 0 },
       events: {
         onReady: function () { if (wantMusic) startMusic(); },
         onError: function () { musicBtn.hidden = true; }   // video can't be embedded: hide the button
