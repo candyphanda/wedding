@@ -11,7 +11,7 @@
   <meta property="og:image" content="assets/photos/cover.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="locked">
@@ -24,7 +24,7 @@
     <span class="env-back"></span>
     <span class="env-flap"></span>
     <span class="env-front"></span>
-    <span class="env-names script">Ngọc &amp; Kiểu</span>
+    <span class="env-names script" data-bind="shortNames">Ngọc &amp; Kiểu</span>
     <span class="env-date">19.12.2026</span>
     <span class="seal"><span>Mở</span></span>
   </button>
@@ -45,7 +45,7 @@
     <div class="cover-shade"></div>
     <div class="cover-text reveal">
       <span class="script big-script">The Wedding of</span>
-      <h1>NGỌC PHAN &amp; KIỂU NGÔ</h1>
+      <h1 data-bind="coverNames">NGỌC PHAN &amp; KIỂU NGÔ</h1>
       <p class="cover-date">19 . 12 . 2026</p>
     </div>
   </section>
@@ -53,14 +53,14 @@
   <!-- 2. INVITATION CARD -->
   <section class="invite">
     <div class="card reveal">
-      <div class="monogram script">N<span>&amp;</span>K</div>
+      <div class="monogram script" data-bind="monogram">N<span>&amp;</span>K</div>
       <p class="small-caps">Trân trọng kính mời tham dự<br>bữa tiệc thân mật cùng gia đình chúng tôi</p>
       <p class="en">Together with our families, we warmly invite you to celebrate with us</p>
 
       <h2 class="names">
-        <span>Ngọc Phan</span>
-        <span class="script and">and</span>
-        <span>Kiểu Ngô</span>
+        <span data-bind="name1">Ngọc Phan</span>
+        <svg class="heart" viewBox="0 0 24 22" aria-hidden="true"><path d="M12 21C5 15.5 1 12 1 7.5 1 4.4 3.4 2 6.4 2c2.1 0 4.1 1.1 5.6 3C13.5 3.1 15.5 2 17.6 2 20.6 2 23 4.4 23 7.5 23 12 19 15.5 12 21z" fill="currentColor"/></svg>
+        <span data-bind="name2">Kiểu Ngô</span>
       </h2>
 
       <div class="datebar">
@@ -69,16 +69,16 @@
       <p class="lunar">(Tức ngày 11 tháng 11 năm Bính Ngọ)</p>
       <p class="en">Saturday, 19 December 2026 · 4:30 pm</p>
 
-      <h3 class="venue">TẠI TƯ GIA NHÀ GÁI</h3>
-      <p class="en">At the bride's family home</p>
-      <p class="addr">Thôn Đoài, Thụy Ninh, Thái Thụy, Thái Bình<br><em>(xã Tây Thụy Anh, tỉnh Hưng Yên)</em></p>
+      <h3 class="venue" data-bind="venueTitle">TẠI TƯ GIA NHÀ GÁI</h3>
+      <p class="en" data-bind="venueEn">At the bride's family home</p>
+      <p class="addr"><span data-bind="address">Thôn Đoài, Thụy Ninh, Thái Thụy, Thái Bình</span><br><em data-bind="addressNote">(xã Tây Thụy Anh, tỉnh Hưng Yên)</em></p>
 
       <div class="families">
-        <div>
+        <div id="fam-bride">
           <h4>NHÀ GÁI</h4>
           <p>Bố: Phan Văn Đoàn<br>Mẹ: Trần Thị Nguyệt</p>
         </div>
-        <div>
+        <div id="fam-groom">
           <h4>NHÀ TRAI</h4>
           <p>Bố: Ngô Hữu Cương<br>Mẹ: Lê Thị Lụa</p>
         </div>
@@ -92,7 +92,7 @@
   <section class="savedate" style="background-image:url('assets/photos/savedate.webp')">
     <div class="sd-column reveal">
       <p class="small-caps light">SAVE THE DATE</p>
-      <p class="script light" style="font-size:2.4rem">Ngọc &amp; Kiểu</p>
+      <p class="script light" style="font-size:2.4rem" data-bind="shortNames">Ngọc &amp; Kiểu</p>
       <span class="line"></span>
       <div class="sd-date"><span>19</span><span>12</span><span>26</span></div>
       <span class="line"></span>
@@ -262,7 +262,7 @@
     <img src="assets/photos/closing.webp" alt="Cảm ơn" loading="lazy">
     <h2 class="script">Thank you!</h2>
     <p class="en center">Hẹn gặp bạn ngày 19.12.2026 · See you on 19.12.2026</p>
-    <p class="foot">Ngọc &amp; Kiểu</p>
+    <p class="foot" data-bind="shortNames">Ngọc &amp; Kiểu</p>
   </section>
 
 </main>

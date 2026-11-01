@@ -14,9 +14,21 @@
   // Which family invited this guest: ?side=bride (nhà gái) or ?side=groom (nhà trai).
   var side = (params.get("side") || "").trim().toLowerCase();
   if (side !== "bride" && side !== "groom") side = "";
+  // Free label for your guest groups, e.g. ?guests=friends or ?guests=colleagues (saved in the Sheet).
+  var group = (params.get("guests") || "").trim().slice(0, 40);
+
+  // Show the right names, order, address and directions for that side.
+  var content = cfg.sides[side || cfg.defaultSide];
+  document.querySelectorAll("[data-bind]").forEach(function (el) {
+    var key = el.getAttribute("data-bind");
+    if (key === "monogram") el.innerHTML = content[key];   // our own text from config.js, safe
+    else if (content[key] !== undefined) el.textContent = content[key];
+  });
+  document.getElementById("fam-bride").style.order = content.firstFamily === "bride" ? 0 : 1;
+  document.getElementById("fam-groom").style.order = content.firstFamily === "groom" ? 0 : 1;
 
   // 2) Maps button
-  document.getElementById("map-btn").href = cfg.mapsUrl;
+  document.getElementById("map-btn").href = content.mapsUrl;
 
   // 3) Music (YouTube player, hidden). Browsers only allow sound after a tap,
   //    so we start it when the guest opens the envelope.
@@ -110,6 +122,7 @@
     data.append("wish", form.wish.value.trim());
     data.append("link", guest);
     data.append("side", side);
+    data.append("group", group);
 
     function done() {
       btn.disabled = true;

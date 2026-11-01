@@ -1,4 +1,3 @@
-@font-face{font-family:"Brittany Signature";src:local("Brittany Signature"),local("BrittanySignature"),url("../fonts/BrittanySignature.woff2") format("woff2"),url("../fonts/BrittanySignature.ttf") format("truetype"),url("../fonts/BrittanySignature.otf") format("opentype");font-display:swap}
 /* ===== Colours and fonts (change here to restyle the whole site) ===== */
 :root{
   --cream:#f3efe8; --paper:#fbf8f2; --brown:#5a4426; --gold:#8a6a1f; --tan:#6b5a3a; --ink:#3b2d18;
@@ -66,9 +65,9 @@ section{position:relative}
 .monogram span{font-size:1.6rem;margin:0 4px}
 .small-caps{font-family:var(--head);font-size:.8rem;letter-spacing:.12em;color:var(--tan);text-transform:uppercase;line-height:1.7}
 .small-caps.light{color:#fff}
-.names{font-family:"Brittany Signature","Allura",cursive;font-weight:400;color:var(--gold);font-size:3rem;letter-spacing:0;text-transform:none;margin:14px 0 12px;line-height:1.25}
+.names{font-family:"Great Vibes","Allura",cursive;font-weight:400;color:var(--gold);font-size:3.2rem;letter-spacing:0;text-transform:none;margin:12px 0 12px;line-height:1.2}
 .names span{display:block}
-.names .and{font-size:2rem;color:#b8a77a;margin:-2px 0}
+.names .heart{display:block;width:22px;height:20px;margin:2px auto 0;color:var(--gold)}
 .datebar{display:flex;border-top:1px solid #cdbb8a;border-bottom:1px solid #cdbb8a;margin:14px 0 8px;font-family:var(--head);color:var(--tan);font-size:.85rem;letter-spacing:.1em}
 .datebar span{flex:1;padding:10px 4px;display:flex;align-items:center;justify-content:center}
 .datebar .d{flex:1.6;color:var(--gold);font-size:1.1rem;font-weight:600;border-left:1px solid #cdbb8a;border-right:1px solid #cdbb8a}
@@ -183,3 +182,5 @@ button[type=submit]:disabled{opacity:.6}
 
 @media (min-width:600px){ body{font-size:19px} }
 @media (prefers-reduced-motion:reduce){.reveal{transition:none;opacity:1;transform:none}.seal,.music-btn.playing svg{animation:none}}
+
+.families>div{order:0}
