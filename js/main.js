@@ -11,6 +11,10 @@
     document.getElementById("f-name").value = guest;
   }
 
+  // Which family invited this guest: ?side=bride (nhà gái) or ?side=groom (nhà trai).
+  var side = (params.get("side") || "").trim().toLowerCase();
+  if (side !== "bride" && side !== "groom") side = "";
+
   // 2) Maps button
   document.getElementById("map-btn").href = cfg.mapsUrl;
 
@@ -105,6 +109,7 @@
     data.append("gift", form.gift.value);
     data.append("wish", form.wish.value.trim());
     data.append("link", guest);
+    data.append("side", side);
 
     function done() {
       btn.disabled = true;

@@ -12,5 +12,5 @@ window.WEDDING = {
   musicVideoId: "XuFDO-2UOrM",
 
   // Google Maps link for the "Chỉ đường" button.
-  mapsUrl: "https://www.google.com/maps/place/Th%C3%B4ng+lan+ch%E1%BB%A3+h%E1%BB%87/@20.5941156,106.4649984,17.5z/data=!4m10!1m2!2m1!1zIGNo4bujIGjhu4ctVGjhu6V5IG5pbmg!3m6!1s0x3135f50062066847:0xecca8f3b6ca7f49f!8m2!3d20.5944906!4d106.4666297!15sChZjaOG7oyBo4buHLVRo4buleSBuaW5okgEGbWFya2V04AEA!16s%2Fg%2F11y9h_gcj_?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D"
+  mapsUrl: "https://maps.app.goo.gl/KwGY2qR7UHLGVD7g7"
 };
