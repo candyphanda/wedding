@@ -189,7 +189,7 @@ button[type=submit]:disabled{opacity:.6}
 
 /* highlighted invitation sentence (page 2) */
 .hl-invite{margin:4px 0 8px;font-family:var(--head);font-size:1.08rem;font-weight:600;line-height:1.9;color:var(--brown)}
-.hl-invite span{background:linear-gradient(transparent 52%,rgba(212,175,55,.45) 52%);padding:0 6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.hl-invite span{background:none}
 
 /* flags + dots under "The story of us" */
 .journey{display:flex;align-items:center;justify-content:center;gap:9px;margin:14px 0 4px}
@@ -204,4 +204,3 @@ button[type=submit]:disabled{opacity:.6}
 @media (prefers-reduced-motion:reduce){.flag{opacity:1;transform:none}.dots i{opacity:1;animation:none!important}}
 .hl-invite{font-size:.96rem;text-wrap:balance}
 .hl-invite{font-weight:700;color:var(--brown)}
-.hl-invite span{background:none!important;box-shadow:none!important;padding:0}
