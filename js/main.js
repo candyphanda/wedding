@@ -27,6 +27,11 @@
   document.getElementById("fam-bride").style.order = content.firstFamily === "bride" ? 0 : 1;
   document.getElementById("fam-groom").style.order = content.firstFamily === "groom" ? 0 : 1;
 
+  // QR code and bank name for that side
+  document.getElementById("qr-img").src = content.qrImage;
+  document.getElementById("qr-dl").href = content.qrImage;
+  document.getElementById("bank-name").textContent = content.bankName;
+
   // 2) Maps button
   document.getElementById("map-btn").href = content.mapsUrl;
 
