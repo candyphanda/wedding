@@ -17,6 +17,12 @@
   // Free label for your guest groups, e.g. ?guests=friends or ?guests=colleagues (saved in the Sheet).
   var group = (params.get("guests") || "").trim().slice(0, 40);
 
+  // ?qr=no hides the wedding-gift QR block and the gift question (default: shown).
+  if ((params.get("qr") || "").toLowerCase() === "no") {
+    var g = document.querySelector(".gift"); if (g) g.style.display = "none";
+    var gs = document.getElementById("f-gift"); if (gs) gs.style.display = "none";
+  }
+
   // Show the right names, order, address and directions for that side.
   var content = cfg.sides[side || cfg.defaultSide];
   document.querySelectorAll("[data-bind]").forEach(function (el) {
