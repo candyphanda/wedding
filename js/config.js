@@ -20,7 +20,7 @@ window.WEDDING = {
       timeline:
         '<div class="tl-day">19/12/2026 · Thứ Bảy</div><ul class="tl">' +
         '<li class="reveal"><div class="tl-t">Sáng / Chiều<small>Morning / Afternoon</small></div><div class="tl-i">💍</div><div class="tl-e">Lễ Hỏi &amp; Đính Hôn<small>Engagement ceremony (family)</small></div></li>' +
-        '<li class="reveal hl"><div class="tl-t">Tối · 16:30<small>Evening</small></div><div class="tl-i">🥂</div><div class="tl-e">Tiệc Thân Mật Cùng Bạn Bè<small>Intimate party with friends · <b>You are invited</b></small></div></li></ul>' +
+        '<li class="reveal hl"><div class="tl-t">Buổi chiều tối<br>16:30<small>Evening</small></div><div class="tl-i">🥂</div><div class="tl-e">Tiệc Thân Mật Cùng Bạn Bè<small>Intimate party with friends · <b>You are invited</b></small></div></li></ul>' +
         '<div class="tl-day soft">20/12/2026 · Chủ Nhật</div><ul class="tl soft">' +
         '<li class="reveal"><div class="tl-t">Buổi sáng<small>Morning</small></div><div class="tl-i">🏡</div><div class="tl-e">Lễ Vũ Quy (Nhà Gái) &amp; Lễ Thành Hôn (Nhà Trai)<small>Wedding ceremonies</small></div></li></ul>'
     },
@@ -31,7 +31,7 @@ window.WEDDING = {
                 lunar: "(Tức ngày 12 tháng 11 năm Bính Ngọ)", en: "Sunday, 20 December 2026 · 8:30 am" }],
       timeline:
         '<div class="tl-day">20/12/2026 · Chủ Nhật</div><ul class="tl">' +
-        '<li class="reveal hl"><div class="tl-t">Buổi sáng · 08:30<small>Morning</small></div><div class="tl-i">🥂</div><div class="tl-e">Tiệc Cưới<small>Wedding banquet · <b>You are invited</b></small></div></li>' +
+        '<li class="reveal hl"><div class="tl-t">Buổi sáng · 08:30<small>Morning</small></div><div class="tl-i">🥂</div><div class="tl-e">Tiệc Cưới<small>Wedding banquet</small></div></li>' +
         '<li class="reveal"><div class="tl-t">11:00<small>Late morning</small></div><div class="tl-i">🏡</div><div class="tl-e">Lễ Vũ Quy (Nhà Gái) &amp; Lễ Thành Hôn (Nhà Trai)<small>Wedding ceremonies</small></div></li></ul>'
     },
     "both": {
@@ -43,9 +43,10 @@ window.WEDDING = {
                 lunar: "(Tức ngày 12 tháng 11 năm Bính Ngọ)", en: "Sunday, 20 December 2026 · 8:30 am" }],
       timeline:
         '<div class="tl-day">19/12/2026 · Thứ Bảy</div><ul class="tl">' +
-        '<li class="reveal hl"><div class="tl-t">Tối · 16:30<small>Evening</small></div><div class="tl-i">🥂</div><div class="tl-e">Tiệc Thân Mật Cùng Bạn Bè<small>Intimate party with friends · <b>You are invited</b></small></div></li></ul>' +
+        '<li class="reveal"><div class="tl-t">Chiều · 13:00<small>Afternoon</small></div><div class="tl-i">💍</div><div class="tl-e">Lễ Hỏi &amp; Đính Hôn<small>Engagement ceremony (family)</small></div></li>' +
+        '<li class="reveal hl"><div class="tl-t">Buổi chiều tối<br>16:30<small>Evening</small></div><div class="tl-i">🥂</div><div class="tl-e">Tiệc Thân Mật Cùng Bạn Bè<small>Intimate party with friends</small></div></li></ul>' +
         '<div class="tl-day">20/12/2026 · Chủ Nhật</div><ul class="tl">' +
-        '<li class="reveal hl"><div class="tl-t">Buổi sáng · 08:30<small>Morning</small></div><div class="tl-i">🥂</div><div class="tl-e">Tiệc Cưới<small>Wedding banquet · <b>You are invited</b></small></div></li>' +
+        '<li class="reveal hl"><div class="tl-t">Buổi sáng · 08:30<small>Morning</small></div><div class="tl-i">🥂</div><div class="tl-e">Tiệc Cưới<small>Wedding banquet</small></div></li>' +
         '<li class="reveal"><div class="tl-t">11:00<small>Late morning</small></div><div class="tl-i">🏡</div><div class="tl-e">Lễ Vũ Quy (Nhà Gái) &amp; Lễ Thành Hôn (Nhà Trai)<small>Wedding ceremonies</small></div></li></ul>'
     }
   },
