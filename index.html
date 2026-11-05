@@ -25,7 +25,7 @@
     <span class="env-flap"></span>
     <span class="env-front"></span>
     <span class="env-names script" data-bind="shortNames">Ngọc &amp; Kiểu</span>
-    <span class="env-date">19.12.2026</span>
+    <span class="env-date" id="env-date">19.12.2026</span>
     <span class="seal"><span>Mở</span></span>
   </button>
   <p class="env-hint">Nhấn để mở thiệp…<br><span class="en">Tap to open</span></p>
@@ -46,7 +46,7 @@
     <div class="cover-text reveal">
       <span class="script big-script">The Wedding of</span>
       <h1 data-bind="coverNames">NGỌC PHAN &amp; KIỂU NGÔ</h1>
-      <p class="cover-date">19 . 12 . 2026</p>
+      <p class="cover-date" id="cover-date">19 . 12 . 2026</p>
     </div>
   </section>
 
@@ -63,11 +63,14 @@
         <span data-bind="name2">Kiểu Ngô</span>
       </h2>
 
+      <div id="date-block">
       <div class="datebar">
         <span>THỨ BẢY</span><span class="d">19 . 12 . 2026</span><span>16:30</span>
       </div>
       <p class="lunar">(Tức ngày 11 tháng 11 năm Bính Ngọ)</p>
       <p class="en">Saturday, 19 December 2026 · 4:30 pm</p>
+
+      </div>
 
       <h3 class="venue" data-bind="venueTitle">TẠI TƯ GIA NHÀ GÁI</h3>
       <p class="en" data-bind="venueEn">At the bride's family home</p>
@@ -94,7 +97,7 @@
       <p class="small-caps light">SAVE THE DATE</p>
       <p class="script light" style="font-size:2.4rem" data-bind="shortNames">Ngọc &amp; Kiểu</p>
       <span class="line"></span>
-      <div class="sd-date"><span>19</span><span>12</span><span>26</span></div>
+      <div class="sd-date" id="sd-date"><span>19</span><span>12</span><span>26</span></div>
       <span class="line"></span>
       <p class="sd-quote">Một đời bên nhau,<br>bắt đầu từ hôm nay.</p>
       <p class="sd-quote en">A lifetime together begins today.</p>
@@ -158,6 +161,7 @@
     <h2 class="tl-title script">Timeline</h2>
     <p class="en center">Our wedding days</p>
 
+    <div id="tl-body">
     <div class="tl-day">19/12/2026 · Thứ Bảy</div>
     <ul class="tl">
       <li class="reveal"><div class="tl-t">Sáng / Chiều<small>Morning / Afternoon</small></div><div class="tl-i">💍</div><div class="tl-e">Lễ Hỏi &amp; Đính Hôn<small>Engagement ceremony (family)</small></div></li>
@@ -168,6 +172,7 @@
     <ul class="tl soft">
       <li class="reveal"><div class="tl-t">Buổi sáng<small>Morning</small></div><div class="tl-i">🏡</div><div class="tl-e">Lễ Vũ Quy (Nhà Gái) &amp; Lễ Thành Hôn (Nhà Trai)<small>Wedding ceremonies</small></div></li>
     </ul>
+    </div>
   </section>
 
   <!-- 6. ALBUM + COUNTDOWN -->
@@ -240,7 +245,7 @@
 
 </main>
 
-<script src="js/config.js?v=3"></script>
-<script src="js/main.js?v=4"></script>
+<script src="js/config.js?v=5"></script>
+<script src="js/main.js?v=5"></script>
 </body>
 </html>

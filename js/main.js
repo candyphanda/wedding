@@ -23,6 +23,20 @@
     var gs = document.getElementById("f-gift"); if (gs) gs.style.display = "none";
   }
 
+  // Which day(s): ?day=19 | ?day=20 | ?day=both  (default: cfg.defaultDay). Texts come from config.js (our own, safe).
+  var day = (params.get("day") || "").trim().toLowerCase();
+  if (!cfg.days[day]) day = cfg.defaultDay;
+  var dd = cfg.days[day];
+  document.title = document.title.replace(/19\.12\.2026/, dd.title.replace(/&amp;/g, "&"));
+  document.getElementById("env-date").innerHTML = dd.env;
+  document.getElementById("cover-date").innerHTML = dd.cover;
+  document.getElementById("sd-date").innerHTML = dd.sd.map(function (x) { return "<span>" + x + "</span>"; }).join("");
+  document.getElementById("date-block").innerHTML = dd.dates.map(function (x) {
+    return '<div class="datebar"><span>' + x.dow + '</span><span class="d">' + x.d + '</span><span>' + x.t + '</span></div>' +
+           '<p class="lunar">' + x.lunar + '</p><p class="en">' + x.en + '</p>';
+  }).join("");
+  document.getElementById("tl-body").innerHTML = dd.timeline;
+
   // Show the right names, order, address and directions for that side.
   var content = cfg.sides[side || cfg.defaultSide];
   document.querySelectorAll("[data-bind]").forEach(function (el) {
@@ -95,7 +109,7 @@
   } else { items.forEach(function (el) { el.classList.add("in"); }); }
 
   // 6) Countdown
-  var target = new Date(cfg.dateTime).getTime();
+  var target = new Date(dd.target).getTime();
   function pad(n) { return String(n).padStart(2, "0"); }
   function tick() {
     var diff = Math.max(0, target - Date.now());
