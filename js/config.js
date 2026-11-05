@@ -35,12 +35,12 @@ window.WEDDING = {
         '<li class="reveal"><div class="tl-t">11:00<small>Late morning</small></div><div class="tl-i">🏡</div><div class="tl-e">Lễ Vũ Quy (Nhà Gái) &amp; Lễ Thành Hôn (Nhà Trai)<small>Wedding ceremonies</small></div></li></ul>'
     },
     "both": {
-      title: "19 &amp; 20.12.2026", cover: "19 &amp; 20 . 12 . 2026", env: "19 &amp; 20.12.2026", sd: ["19/20", "12", "26"],
+      title: "19 &amp; 20.12.2026", cover: "19 &amp; 20 . 12 . 2026", env: "19 &amp; 20.12.2026", sd: ["20", "12", "26"],
       target: "2026-12-19T16:30:00+07:00",
       dates: [{ dow: "THỨ BẢY", d: "19 . 12 . 2026", t: "16:30",
-                lunar: "(Tức ngày 11 tháng 11 năm Bính Ngọ)", en: "Saturday, 19 December 2026 · 4:30 pm" },
+                lunar: "", en: "Saturday, 19 December 2026 · 4:30 pm" },
               { dow: "CHỦ NHẬT", d: "20 . 12 . 2026", t: "08:30",
-                lunar: "(Tức ngày 12 tháng 11 năm Bính Ngọ)", en: "Sunday, 20 December 2026 · 8:30 am" }],
+                lunar: "", en: "Sunday, 20 December 2026 · 8:30 am" }],
       timeline:
         '<div class="tl-day">19/12/2026 · Thứ Bảy</div><ul class="tl">' +
         '<li class="reveal"><div class="tl-t">Chiều · 13:00<small>Afternoon</small></div><div class="tl-i">💍</div><div class="tl-e">Lễ Hỏi &amp; Đính Hôn<small>Engagement ceremony (family)</small></div></li>' +

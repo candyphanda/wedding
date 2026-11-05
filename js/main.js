@@ -33,7 +33,7 @@
   document.getElementById("sd-date").innerHTML = dd.sd.map(function (x) { return "<span>" + x + "</span>"; }).join("");
   document.getElementById("date-block").innerHTML = dd.dates.map(function (x) {
     return '<div class="datebar"><span>' + x.dow + '</span><span class="d">' + x.d + '</span><span>' + x.t + '</span></div>' +
-           '<p class="lunar">' + x.lunar + '</p><p class="en">' + x.en + '</p>';
+           (x.lunar ? '<p class="lunar">' + x.lunar + '</p>' : '') + '<p class="en">' + x.en + '</p>';
   }).join("");
   document.getElementById("tl-body").innerHTML = dd.timeline;
 
